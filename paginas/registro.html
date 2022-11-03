@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de candidaturas</title>
+</head>
+<body>
+  <div>
+    <h1>Registro de candidaturas</h1>
+    <form>
+      <!-- nome do candidato -->
+      <div>
+        <label for="nome">Nome:</label>
+        <div>
+          <input type="text" id="nome" name="nome" required="required" autofocus="autofocus"/>
+        </div>
+      </div>
+      <!-- data de nascimento -->
+      <div>
+        <label for="data">Data de Nascimento:</label>
+        <div>
+          <input type="date" id="data" name="data"required="required"/>
+        </div>
+      </div>
+      <!-- Sexo -->
+      <div>
+        <label for="Sexo">Sexo:</label>
+        <div>
+          <fieldset>
+            <!-- fieldset - esta teg desenha uma caixa ao redor dos campos agrupados -->
+            <legend>Sexo:</legend>
+            <input type="radio" id="masculino" name="sexo" value="masculino">Masculino<br/>
+            <input type="radio" id="feminino" name="sexo" value="feminino">Feminino<br/>
+          </fieldset>
+        </div>
+      </div>
+      <!-- telefone -->
+      <div>
+        <label for="telefone">Telefone</label>
+        <div>
+          <input type="tel" id="telefone" name="telefone" required="required">
+        </div>
+      </div>
+      <!-- email -->
+      <div>
+        <label for="email">Email:</label>
+        <div>
+          <input type="email" id="email" name="email" required="required">
+        </div>
+      </div>
+      <!-- Lista de vagas -->
+      <div>
+        <label for="vaga">Vaga Desejada</label>
+        <div>
+          <select name="vaga" id="vaga">
+            <option value="1">Administrador Banco de Dados</option>
+            <option value="2">Analista de Sistemas</option>
+            <option value="3">Web Designer</option>
+            <option value="4">Programador Java</option>
+          </select>
+        </div>
+      </div>
+      <!-- botao de comandos -->
+      <div>
+        <input type="button" value="incluir">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
