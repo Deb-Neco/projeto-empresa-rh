@@ -9,10 +9,10 @@
   </head>
   <body>
     <div>
-      <h1>Registro de candidaturas</h1>
+      <h1>Registro de candidatos</h1>
       <form>
-        <!-- nome do candidato -->
-        <div>
+        <div class="container borda">
+           <!-- nome do candidato -->
           <label for="nome">Nome:</label>
           <div>
             <input
@@ -23,7 +23,7 @@
               autofocus="autofocus"
             />
           </div>
-        </div>
+       
         <!-- data de nascimento -->
         <div>
           <label for="data">Data de Nascimento:</label>
@@ -36,7 +36,7 @@
           <label for="Sexo">Sexo:</label>
           <div>
             <fieldset>
-              <!-- fieldset - esta teg desenha uma caixa ao redor dos campos agrupados -->
+             
               <legend>Sexo:</legend>
               <input
                 type="radio"
@@ -49,7 +49,7 @@
                 id="feminino"
                 name="sexo"
                 value="feminino"
-              />Feminino<br />
+              />Feminino<br/>
             </fieldset>
           </div>
         </div>
@@ -88,7 +88,8 @@
         <div>
           <input type="button" value="incluir" />
         </div>
-      </form>
     </div>
+  </div>
+  </form>
   </body>
 </html>

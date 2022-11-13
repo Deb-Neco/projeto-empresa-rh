@@ -1,5 +1,7 @@
 *{
   font-family: 'Segoe UI', Tahoma, geneva, Verdana, sans-serif;
+  padding: 0;
+  border: 0;
 }
 body{
   background-color: rgb(235, 235, 216);
@@ -7,45 +9,7 @@ body{
 .container{
   margin: 80px 50px 50px 50px;
 }
-nav{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-.menu{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #003264;
-}
-.menu li{
-  float: left;
-}
-.menu li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.menu li a:hover{
-  background-color: #DFDFDF;
-  color: #003264;
-}
-/*Rodapé*/
-footer{
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-  padding: 5px;
-  text-align: center;
-  font-size: 14px;
-  color: white;
-  background-color: #828282;
-}
+
 .intro{
   background: url(../imagens/inicio.jpg)center center fixed;
   background-size: cover;
@@ -55,10 +19,27 @@ footer{
   right: 0;
 }
 /*rodapé*/
+footer{
+ left: 0;
+ right: 0;
+ bottom: 0;
+ position: fixed;
+ padding: 5px;
+ text-align: center;
+ font-size: 14px;
+ color: white;
+ background-color: #828282;
+}
 .footer{
   background: url(../imagens/rodape.jpg) center center fixed;
   background-size: cover;
   color: white;
   padding: 30px;
   text-align: center;
+}
+.borda{
+  box-shadow: 5px 5px 10px #000;
+  padding: 30px;
+  margin-right: 30px;
+  background-color: white;
 }
