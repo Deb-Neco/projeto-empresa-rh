@@ -7,12 +7,33 @@ let lista = document.getElementById("vaga");
 
 //função para construir a lista de vagas na página
 function exibirVagas(){
-  for(let i = 0; i< vagas.length; i++){
-    let option = document.createElement("option");
-    option.textContent = vagas[i].titulo;
-    option.setAttribute("value",vagas[i].id);
+  let desenv = document.getElementById("desenv");
+  let negocio = document.getElementById("negocio");
 
-    lista.appendChild(option);
+  limparLista();
+
+  for(let i = 0; i < vagas.length; i++){
+
+    let tipo = vagas[i].tipo;
+    var qualTipo = (desenv.checked && tipo === '1') || (negocio.checked && tipo === '2');
+
+    if(qualTipo){
+      let option = document.createElement("option");
+      option.textContent = vagas[i].titulo;
+      option.setAttribute("value",vagas[i].id);
+
+      lista.appendChild(option);
+    }
+
+    desenv.addEventListener("click", exibirVagas, false);
+    negocio.addEventListener("click", exibirVagas, false)
+
+  }
+}
+//função limpar lista de vagas
+function limparLista(){
+  while(lista.firstChild){
+    lista.removeChild(lista.firstChild);
   }
 }
 
