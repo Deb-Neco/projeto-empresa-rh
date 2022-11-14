@@ -1,7 +1,7 @@
 *{
   font-family: 'Segoe UI', Tahoma, geneva, Verdana, sans-serif;
   padding: 0;
-  border: 0;
+  margin: 0;
 }
 body{
   background-color: rgb(235, 235, 216);
@@ -13,7 +13,7 @@ body{
 .intro{
   background: url(../imagens/inicio.jpg)center center fixed;
   background-size: cover;
-  padding: 220px 0;
+  padding: 20px 0;
   margin-top: 40px;
   left: 0;
   right: 0;
@@ -38,7 +38,7 @@ footer{
   text-align: center;
 }
 .borda{
-  box-shadow: 5px 5px 10px #000;
+  box-shadow: 1px 1px 5px #000;
   padding: 30px;
   margin-right: 30px;
   background-color: white;
